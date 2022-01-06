@@ -1,0 +1,483 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ravichandran</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    <!-- custom-theme -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta property="og:locale" content="en_US" />
+     <meta name="theme-color" content="#441887"/>
+   
+
+    <meta property="og:type" content="website" />
+  
+    </script>
+    <!-- //custom-theme -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    
+    <!-- stylesheet -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="all">
+    <!-- <link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> -->
+    
+    <!-- //stylesheet -->
+    <!-- online fonts-->
+    
+    <!-- //online fonts -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+    <link href="fonts/FontsFree-Net-Proxima-Nova-Bold.otf" type="text/css" rel="stylesheet">
+
+
+    <!-- //font-awesome-icons -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+ 
+</head>
+
+<body >
+  <form action="mail.php" class="form-style validate-form clearfix" id="regForm"  method="post" role="form" style="margin-top: 20px;width: 94%;">
+                          
+    <!-- <div class="form-group">
+      <input class="text-field form-control validate-field " data-validation-type="string" id="form-name" name="name" placeholder="Full Name" required="" type="text" />
+    </div> -->
+    <div class="all-steps" id="all-steps"> <span class="step"></span> <span class="step"></span> <span class="step"></span>  </div>
+    
+    <div class="tab">
+    <div class="col-sm-4 form-group">
+      <label for="email">First Name<span >*</span></label>
+      <input class="text-field form-control validate-field " required  />
+    </div>
+    <div class="col-sm-4 form-group">
+      <label for="email">Middle Name</label>
+      <input class="text-field form-control validate-field "   />
+    </div>
+    <div class="col-sm-4 form-group">
+      <label for="email">Last Name<span >*</span></label>
+      <input class="text-field form-control validate-field "  required />
+    </div>
+    <div class="col-sm-8 form-group">
+      <label for="email">Street Address<span >*</span></label>
+      <input class="text-field form-control validate-field "  required />
+    </div>
+    <div class="col-sm-4 form-group">
+      <label for="email">Unit #</label>
+      <input class="text-field form-control validate-field "   />
+    </div>
+    <div class="col-sm-4 form-group">
+      <label for="email">City<span >*</span></label>
+      <input class="text-field form-control validate-field "  required />
+    </div>
+    <div class="col-sm-4 form-group">
+      <label for="email">State<span >*</span></label>
+      <select style="width: 100%;" required>
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option>
+        <option value="CA">California</option>
+        <option value="CO">Colorado</option>
+        <option value="CT">Connecticut</option>
+        <option value="DE">Delaware</option>
+        <option value="DC">District Of Columbia</option>
+        <option value="FL">Florida</option>
+        <option value="GA">Georgia</option>
+        <option value="HI">Hawaii</option>
+        <option value="ID">Idaho</option>
+        <option value="IL">Illinois</option>
+        <option value="IN">Indiana</option>
+        <option value="IA">Iowa</option>
+        <option value="KS">Kansas</option>
+        <option value="KY">Kentucky</option>
+        <option value="LA">Louisiana</option>
+        <option value="ME">Maine</option>
+        <option value="MD">Maryland</option>
+        <option value="MA">Massachusetts</option>
+        <option value="MI">Michigan</option>
+        <option value="MN">Minnesota</option>
+        <option value="MS">Mississippi</option>
+        <option value="MO">Missouri</option>
+        <option value="MT">Montana</option>
+        <option value="NE">Nebraska</option>
+        <option value="NV">Nevada</option>
+        <option value="NH">New Hampshire</option>
+        <option value="NJ">New Jersey</option>
+        <option value="NM">New Mexico</option>
+        <option value="NY">New York</option>
+        <option value="NC">North Carolina</option>
+        <option value="ND">North Dakota</option>
+        <option value="OH">Ohio</option>
+        <option value="OK">Oklahoma</option>
+        <option value="OR">Oregon</option>
+        <option value="PA">Pennsylvania</option>
+        <option value="RI">Rhode Island</option>
+        <option value="SC">South Carolina</option>
+        <option value="SD">South Dakota</option>
+        <option value="TN">Tennessee</option>
+        <option value="TX">Texas</option>
+        <option value="UT">Utah</option>
+        <option value="VT">Vermont</option>
+        <option value="VA">Virginia</option>
+        <option value="WA">Washington</option>
+        <option value="WV">West Virginia</option>
+        <option value="WI">Wisconsin</option>
+        <option value="WY">Wyoming</option>
+      </select>	 
+    </div>
+    <div class="col-sm-4 form-group">
+      <label for="email">Zip Code<span >*</span></label>
+      <input class="text-field form-control validate-field " required  />
+    </div>
+
+   <div class="col-sm-12 form-group">
+      <label for="email">Date of Birth<span >*</span></label>
+      <input class="text-field form-control validate-field " required  placeholder="MM/DD/YYYY"/>
+      <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom" style="    position: absolute;
+      right: 6%;
+      top: 20%;
+      font-size: 20px;
+      color: lightgreen;"></span>
+    </div>
+    <div class="col-sm-6 form-group">
+      <label for="email">Phone number<span >*</span></label>
+      <input class="text-field form-control validate-field phone" required />
+    </div>
+    <div class="col-sm-6 form-group">
+      <label for="email">Email address<span >*</span></label>
+      <input class="text-field form-control validate-field " required type="email" />
+    </div>
+
+  </div>
+  <div class="tab">
+   <div class="row">
+     <div class="col-sm-4 " >
+       <div class="row box1">
+       <div class="col-sm-3">
+        <label for="card">
+          <i class="fa fa-home" aria-hidden="true" style="color: blue;"></i>
+        
+      </label>
+       </div>
+       <div class="col-sm-9">
+        <input type="radio" name="payment" id="card">
+        <h2 >House</h2>
+        <p>This may be a single family home, town house or duplex</p>
+       </div>
+      </div>
+     </div>
+     <div class="col-sm-4 " >
+      <div class="row box1">
+       <div class="col-sm-3">
+        <label for="cash">
+          <i class="fa fa-hospital-o" aria-hidden="true" style="color: blue;"></i>
+         
+      </label>
+       </div>
+       <div class="col-sm-9">
+        <input type="radio" name="payment" id="cash">
+        <h2>Condo</h2>
+        <p>This is likely a multi family buiding or complex in which you own a unit</p>
+       </div>
+     
+      </div>
+    </div>
+    <div class="col-sm-4 ">
+      <div class="row box1">
+      <div class="col-sm-3">
+        <label for="house">
+          <i class="fa fa-building" aria-hidden="true" style="color: blue;"></i>
+         
+      </label>
+      </div>
+      <div class="col-sm-9">
+        <input type="radio" name="payment" id="house">
+        <h2>HO5</h2>
+        <p>The HO5 is an open perils insurance policy for single family home or duplex</p>
+      </div>
+      
+      </div>
+    </div>
+   </div>
+</div>
+<div class="tab">
+  <h2 style="text-align:center">Insurance Premiums</h2>
+<p style="text-align:center">Select your options</p>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Basic</li>
+    <li class="grey">$ 500 / year</li>
+    <li>$30,000</li>
+    <li>$5,000</li>
+        <li class="grey"><a href="/price.html" class="button">BUY</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#04AA6D">Pro</li>
+    <li class="grey">$ 1,183 / year</li>
+    <li>Coverage $50,000</li>
+    <li>Liability $10,000</li>
+        <li class="grey"><a href="/price.html" class="button">BUY</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Pro Max</li>
+    <li class="grey">$1500/ year</li>
+    <li>$70,000</li>
+    <li>$15,000</li>
+    <li class="grey"><a href="/price.html" class="button">BUY</a></li>
+  </ul>
+</div>
+</div>
+<!-- <div class="tab">
+    <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+    <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+</div> -->
+<div style="text-align: center;">
+    <!-- <textarea class="form-control validate-field msheight" id="form-message" name="message" placeholder="Message..." required=""></textarea> -->
+   
+    <!-- <input class="btn Rectangle-92 " style="margin: 12px 0px 12px;width: 50%;
+    text-align: center;" type="submit"  value="Submit"> -->
+  
+      <div style="float:right;
+      margin-right: 25px;"> <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button> 
+        <button type="button" id="nextBtn" onclick="nextPrev(1)">Submit</button> </div>
+
+  </div>
+  </div>
+</form>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  .columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+  }
+  
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+  .button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+    }
+  }
+  </style>
+<style>
+  input, select,input:hover, select:hover,select:focus{
+    border-top: none!important;
+    border-left: none!important;
+    border-right: none!important;
+    box-shadow: none!important;
+    height: 35px!important;
+  }
+  /* body {
+    background: #eee
+} */
+#card, #cash, #house{
+  position: absolute;
+    right: 0px;
+    right: -102px;
+}
+.box1{
+  border: 2px solid grey;
+    border-radius: 6px;
+    padding: 10px;
+    width: 98%;
+    height: 170px;
+    margin-bottom: 20px;
+}
+#regForm {
+    /* background-color: #ffffff; */
+    margin: 0px auto;
+    font-family: Raleway;
+    padding: 40px;
+    border-radius: 10px
+}
+.fa{
+  font-size: 60px;
+ 
+    padding-top: 40px;
+}
+h1 {
+    text-align: center
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa
+}
+
+input.invalid {
+    background-color: #ffdddd
+}
+
+.tab {
+    display: none
+}
+
+button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer
+}
+
+button:hover {
+    opacity: 0.8
+}
+
+#prevBtn {
+    background-color: #bbbbbb
+}
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5
+}
+
+.step.active {
+    opacity: 1
+}
+
+.step.finish {
+    background-color: #4CAF50
+}
+
+.all-steps {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.thanks-message {
+    display: none
+}
+</style>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+var currentTab = 0;
+document.addEventListener("DOMContentLoaded", function(event) {
+
+
+showTab(currentTab);
+
+});
+
+function showTab(n) {
+var x = document.getElementsByClassName("tab");
+x[n].style.display = "block";
+if (n == 0 || n== 2) {
+document.getElementById("prevBtn").style.display = "none";
+} else {
+document.getElementById("prevBtn").style.display = "inline";
+}
+if (n == (x.length - 1)) {
+document.getElementById("nextBtn").innerHTML = "Submit";
+} if ( n== 2) {
+document.getElementById("nextBtn").style.display = "none";
+}  else {
+document.getElementById("nextBtn").innerHTML = "Next";
+}
+fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+var x = document.getElementsByClassName("tab");
+if (n == 1 && !validateForm()) return false;
+x[currentTab].style.display = "none";
+currentTab = currentTab + n;
+if (currentTab >= x.length) {
+// document.getElementById("regForm").submit();
+// return false;
+//alert("sdf");
+document.getElementById("nextprevious").style.display = "none";
+document.getElementById("all-steps").style.display = "none";
+document.getElementById("register").style.display = "none";
+document.getElementById("text-message").style.display = "block";
+
+
+
+
+}
+showTab(currentTab);
+}
+
+function validateForm() {
+var x, y, i, valid = true;
+x = document.getElementsByClassName("tab");
+y = x[currentTab].getElementsByTagName("input");
+for (i = 0; i < y.length; i++) { if (y[i].value=="" ) { y[i].className +=" invalid" ; valid=false; } } if (valid) { document.getElementsByClassName("step")[currentTab].className +=" finish" ; } return valid; } function fixStepIndicator(n) { var i, x=document.getElementsByClassName("step"); for (i=0; i < x.length; i++) { x[i].className=x[i].className.replace(" active", "" ); } x[n].className +=" active" ; }
+</script>
+</body>
+
+</html>
